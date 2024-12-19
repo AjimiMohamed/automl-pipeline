@@ -10,6 +10,7 @@ view: add_transformation {
   dimension: action_placeholder {
     type: string
     sql: ${TABLE}.action_placeholder ;;
+
     action: {
       label: "Add Transformation Metadata"
       url: "https://europe-west1-ajimimohamed-devlab.cloudfunctions.net/populate-metadata-table"
