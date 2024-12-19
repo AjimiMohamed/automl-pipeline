@@ -3,7 +3,7 @@ view: kevin {
 
   dimension: vqn_driel {
     type: string
-    sql: ${TABLE}.vqn driel ;;
+    sql: ${TABLE}.vqn_driel ;;
   }
 
 }
