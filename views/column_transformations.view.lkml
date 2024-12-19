@@ -60,7 +60,7 @@ view: column_transformations {
 
     action: {
       label: "Load Static Data"
-      url: "https://europe-west1-ajimimohamed-devlab.cloudfunctions.net/update-lookml"
+      url: "https://europe-west1-ajimimohamed-devlab.cloudfunctions.net/update-lookml-auto"
 
       # Pass the currently selected row's table_name as a param
       param: {
