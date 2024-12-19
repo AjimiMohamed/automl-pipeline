@@ -52,4 +52,22 @@ view: column_transformations {
       }
     }
   }
+
+  # Add a special action dimension:
+  dimension: create_lookml {
+    type: string
+    sql: ' ' ;;
+
+    action: {
+      label: "Load Static Data"
+      url: "https://europe-west1-ajimimohamed-devlab.cloudfunctions.net/populate-static-table"
+
+      # Pass the currently selected row's table_name as a param
+      param: {
+        name: "table_name"
+        value: "{{ column_transformations.table_name._value }}"
+      }
+
+    }
+  }
   }
