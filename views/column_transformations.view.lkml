@@ -20,7 +20,7 @@ view: column_transformations {
 
   # Action dimension that doesn't rely on current row values.
   dimension: transformation_rule {
-    type: string
+    type: date
     sql: ${TABLE}.transformation_rule ;;
 
 
