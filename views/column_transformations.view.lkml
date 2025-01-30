@@ -17,10 +17,7 @@ view: column_transformations {
     type: count
     drill_fields: [attribute_names, table_name]
   }
-  dimension: target_type {
-    type: string
-    sql: ${TABLE}.target_type ;;
-  }
+
   # Action dimension that doesn't rely on current row values.
   dimension: transformation_rule {
     type: string
