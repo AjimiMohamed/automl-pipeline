@@ -29,3 +29,7 @@ explore: column_transformations {}
 explore: add_transformation {
   from: add_transformation
 }
+
+explore: looker_lineage {
+  label: "Looker Lineage"
+}
