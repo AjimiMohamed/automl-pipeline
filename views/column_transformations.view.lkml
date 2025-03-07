@@ -1,7 +1,7 @@
 view: column_transformations {
   sql_table_name: `metadata_easystay.column_transformations` ;;
 
-  dimension: attribute_name {
+  dimension: attribute_names {
     type: string
     sql: ${TABLE}.attribute_name;;
   }
@@ -11,19 +11,15 @@ view: column_transformations {
     sql: ${TABLE}.table_name ;;
   }
 
-  dimension: target_type {
-    type: string
-    sql: ${TABLE}.target_type ;;
-  }
 
   measure: count {
     type: count
-    drill_fields: [attribute_name, table_name]
+    drill_fields: [attribute_names, table_name]
   }
 
   # Action dimension that doesn't rely on current row values.
   dimension: transformation_rule {
-    type: string
+    type: date
     sql: ${TABLE}.transformation_rule ;;
 
 
