@@ -11,7 +11,10 @@ view: column_transformations {
     sql: ${TABLE}.table_name ;;
   }
 
-
+  dimension: target_type {
+    type: string
+    sql: ${TABLE}.target_type ;;
+  }
 
   measure: count {
     type: count
